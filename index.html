@@ -3,73 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zadanie 1 - Analiza funkcji</title>
+    <title>Równania kwadratowe i delta</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 20px;
-            background-color: #f9f9f9;
         }
-        h1, h2 {
-            color: #2c3e50;
-        }
-        p {
-            margin: 10px 0;
-        }
-        .equation {
-            font-family: "Courier New", Courier, monospace;
-            background-color: #ecf0f1;
-            padding: 5px;
-            border-radius: 5px;
-            display: inline-block;
-        }
-        .section {
+        .case {
             margin-bottom: 20px;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
         }
     </style>
 </head>
 <body>
-    <h1>Zadanie 1 - Analiza funkcji</h1>
+    <h1>Równania kwadratowe i delta</h1>
+    <p>Równanie kwadratowe w postaci ogólnej to:</p>
+    <p><code>ax² + bx + c = 0</code></p>
+    <p>Wyróżnik (delta) jest obliczany według wzoru:</p>
+    <p><code>Δ = b² - 4ac</code></p>
+    <h2>Przypadki w zależności od wartości delty:</h2>
+    <div class="case">
+        <h3>1. Δ &gt; 0:</h3>
+        <p><code>x₁ = (-b - √Δ) / (2a)</code></p>
+        <p><code>x₂ = (-b + √Δ) / (2a)</code></p>
+    </div>
+    <div class="case">
+        <h3>2. Δ = 0:</h3>
+        <p><code>x = -b / (2a)</code></p>
+    </div>
+    <div class="case">
+        <h3>3. Δ &lt; 0:</h3>
+        <p>Brak rozwiązań.</p>
+    </div>
+
+    <h1>Rozwiązanie równania kwadratowego f(x) = x² - x - 6</h1>
+    <p>Aby rozwiązać równanie kwadratowe <code>f(x) = x² - x - 6</code>, znajdź miejsca zerowe funkcji.</p>
     
-    <div class="section">
-        <h2>(a) Miejsca zerowe funkcji</h2>
-        <p>Szukamy rozwiązań równania <span class="equation">f(x) = |20x² - 5| = 0</span>.</p>
-        <p>Dla wartości bezwzględnej mamy:</p>
-        <p><span class="equation">20x² - 5 = 0</span></p>
-        <p>Rozwiązujemy równanie:</p>
-        <p><span class="equation">x² = 1/4</span></p>
-        <p>Zatem miejsca zerowe to:</p>
-        <p><span class="equation">x = -1/2</span> oraz <span class="equation">x = 1/2</span>.</p>
-    </div>
+    <h2>Krok 1: Znajdź współczynniki</h2>
+    <p>Równanie ma postać ogólną <code>ax² + bx + c = 0</code>, gdzie:</p>
+    <ul>
+        <li><code>a = 1</code></li>
+        <li><code>b = -1</code></li>
+        <li><code>c = -6</code></li>
+    </ul>
+    
+    <h2>Krok 2: Wyznacz deltę</h2>
+    <p>Delta <code>Δ</code> to:</p>
+    <pre><code>Δ = b² - 4ac</code>
+<code>Δ = (-1)² - 4(1)(-6) = 1 + 24 = 25</code></pre>
+    
+    <h2>Krok 3: Znajdź pierwiastki równania</h2>
+    <p>Pierwiastki wyznacza się ze wzoru kwadratowego:</p>
+    <pre><code>x = (-b ± √Δ) / 2a</code>
+<code>x = (1 ± √25) / 2(1)</code></pre>
+    
+    <h3>Rozwiązując:</h3>
+    <pre><code>x₁ = (1 + 5) / 2 = 3</code>
+<code>x₂ = (1 - 5) / 2 = -2</code></pre>
+    
+    <h2>Wynik:</h2>
+    <p>Miejsca zerowe funkcji to:</p>
+    <ul>
+        <li><code>x₁ = 3</code></li>
+        <li><code>x₂ = -2</code></li>
+    </ul>
 
-    <div class="section">
-        <h2>(b) Przedziały monotoniczności funkcji</h2>
-        <p>Funkcja ma różne postacie w zależności od przedziałów:</p>
-        <ul>
-            <li>Dla <span class="equation">x ∈ (-∞, -1/2)</span>: <span class="equation">f(x) = 20x² - 5</span> (funkcja rośnie).</li>
-            <li>Dla <span class="equation">x ∈ (-1/2, 1/2)</span>: <span class="equation">f(x) = 5 - 20x²</span> (funkcja maleje).</li>
-            <li>Dla <span class="equation">x ∈ (1/2, ∞)</span>: <span class="equation">f(x) = 20x² - 5</span> (funkcja rośnie).</li>
-        </ul>
-        <p>Ostatecznie:</p>
-        <ul>
-            <li>Funkcja maleje w przedziałach <span class="equation">(-∞, -1/2)</span> oraz <span class="equation">(0, 1/2)</span>.</li>
-            <li>Funkcja rośnie w przedziałach <span class="equation">(-1/2, 0)</span> oraz <span class="equation">(1/2, ∞)</span>.</li>
-        </ul>
-    </div>
+    <h1>Rozwiązanie zadania</h1>
 
-    <div class="section">
-        <h2>(c) Wzór funkcji <span class="equation">(1/5) * f(x + 3) - 10</span></h2>
-        <p>Podstawiamy <span class="equation">x + 3</span> do funkcji <span class="equation">f(x)</span>:</p>
-        <p><span class="equation">f(x+3) = |20(x+3)² - 5|</span></p>
-        <p>Rozwijamy wyrażenie:</p>
-        <p><span class="equation">(x+3)² = x² + 6x + 9</span></p>
-        <p>Zatem:</p>
-        <p><span class="equation">f(x+3) = |20x² + 120x + 175|</span></p>
-        <p>Przekształcamy funkcję:</p>
-        <p><span class="equation">(1/5) * f(x+3) - 10 = |4x² + 24x + 35| - 10</span></p>
-        <p>Ostateczny wzór:</p>
-        <p><span class="equation">|4x² + 24x + 35| - 10</span></p>
-    </div>
+    <p>Rozwiążmy wyrażenie <code>f(x) = x³ - 3x² + 3x - 1</code> przy użyciu wzoru skróconego mnożenia:</p>
+    
+    <p>Chcemy wyrazić funkcję <code>f(x)</code> w postaci <code>(a - b)³ = a³ - 3a²b + 3ab² - b³</code>.</p>
+
+    <h2>Krok 1: Dopasowanie funkcji do wzoru</h2>
+    <p>Funkcja <code>f(x) = x³ - 3x² + 3x - 1</code> jest w postaci, którą możemy zapisać jako <code>(x - 1)³</code>.</p>
+
+    <h2>Krok 2: Sprawdzenie obliczeń</h2>
+    <p>Sprawdzamy, czy rozkład <code>(x - 1)³</code> daje nam wyrażenie <code>x³ - 3x² + 3x - 1</code>:</p>
+
+    <pre><code>(x - 1)³ = x³ - 3x² + 3x - 1</code></pre>
+
+    <p>Rzeczywiście, mamy: <code>f(x) = (x - 1)³</code>.</p>
+
+
 </body>
 </html>
