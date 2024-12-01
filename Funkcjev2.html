@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 1 - Analiza funkcji</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        p {
+            margin: 10px 0;
+        }
+        .equation {
+            font-family: "Courier New", Courier, monospace;
+            background-color: #ecf0f1;
+            padding: 5px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Zadanie 1 - Analiza funkcji</h1>
+    
+    <div class="section">
+        <h2>(a) Miejsca zerowe funkcji</h2>
+        <p>Szukamy rozwiązań równania <span class="equation">f(x) = |20x² - 5| = 0</span>.</p>
+        <p>Dla wartości bezwzględnej mamy:</p>
+        <p><span class="equation">20x² - 5 = 0</span></p>
+        <p>Rozwiązujemy równanie:</p>
+        <p><span class="equation">x² = 1/4</span></p>
+        <p>Zatem miejsca zerowe to:</p>
+        <p><span class="equation">x = -1/2</span> oraz <span class="equation">x = 1/2</span>.</p>
+    </div>
+
+    <div class="section">
+        <h2>(b) Przedziały monotoniczności funkcji</h2>
+        <p>Funkcja ma różne postacie w zależności od przedziałów:</p>
+        <ul>
+            <li>Dla <span class="equation">x ∈ (-∞, -1/2)</span>: <span class="equation">f(x) = 20x² - 5</span> (funkcja rośnie).</li>
+            <li>Dla <span class="equation">x ∈ (-1/2, 1/2)</span>: <span class="equation">f(x) = 5 - 20x²</span> (funkcja maleje).</li>
+            <li>Dla <span class="equation">x ∈ (1/2, ∞)</span>: <span class="equation">f(x) = 20x² - 5</span> (funkcja rośnie).</li>
+        </ul>
+        <p>Ostatecznie:</p>
+        <ul>
+            <li>Funkcja maleje w przedziałach <span class="equation">(-∞, -1/2)</span> oraz <span class="equation">(0, 1/2)</span>.</li>
+            <li>Funkcja rośnie w przedziałach <span class="equation">(-1/2, 0)</span> oraz <span class="equation">(1/2, ∞)</span>.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>(c) Wzór funkcji <span class="equation">(1/5) * f(x + 3) - 10</span></h2>
+        <p>Podstawiamy <span class="equation">x + 3</span> do funkcji <span class="equation">f(x)</span>:</p>
+        <p><span class="equation">f(x+3) = |20(x+3)² - 5|</span></p>
+        <p>Rozwijamy wyrażenie:</p>
+        <p><span class="equation">(x+3)² = x² + 6x + 9</span></p>
+        <p>Zatem:</p>
+        <p><span class="equation">f(x+3) = |20x² + 120x + 175|</span></p>
+        <p>Przekształcamy funkcję:</p>
+        <p><span class="equation">(1/5) * f(x+3) - 10 = |4x² + 24x + 35| - 10</span></p>
+        <p>Ostateczny wzór:</p>
+        <p><span class="equation">|4x² + 24x + 35| - 10</span></p>
+    </div>
+</body>
+</html>
