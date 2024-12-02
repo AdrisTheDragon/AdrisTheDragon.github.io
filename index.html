@@ -21,73 +21,218 @@
     </style>
 </head>
 <body>
-    <h1>Równania kwadratowe i delta</h1>
-    <p>Równanie kwadratowe w postaci ogólnej to:</p>
-    <p><code>ax² + bx + c = 0</code></p>
-    <p>Wyróżnik (delta) jest obliczany według wzoru:</p>
-    <p><code>Δ = b² - 4ac</code></p>
-    <h2>Przypadki w zależności od wartości delty:</h2>
-    <div class="case">
-        <h3>1. Δ &gt; 0:</h3>
-        <p><code>x₁ = (-b - √Δ) / (2a)</code></p>
-        <p><code>x₂ = (-b + √Δ) / (2a)</code></p>
-    </div>
-    <div class="case">
-        <h3>2. Δ = 0:</h3>
-        <p><code>x = -b / (2a)</code></p>
-    </div>
-    <div class="case">
-        <h3>3. Δ &lt; 0:</h3>
-        <p>Brak rozwiązań.</p>
-    </div>
 
-    <h1>Rozwiązanie równania kwadratowego f(x) = x² - x - 6</h1>
-    <p>Aby rozwiązać równanie kwadratowe <code>f(x) = x² - x - 6</code>, znajdź miejsca zerowe funkcji.</p>
-    
-    <h2>Krok 1: Znajdź współczynniki</h2>
-    <p>Równanie ma postać ogólną <code>ax² + bx + c = 0</code>, gdzie:</p>
+
+    <h1>Zadanie 1a</h1>
+
+    <h2>Funkcja: <code>f(x) = x^2 - x - 6</code></h2>
+
+    <h3>1. Wyznaczenie dziedziny funkcji:</h3>
+    <p>Funkcja <code>f(x) = x^2 - x - 6</code> jest wielomianem, a wielomiany są określone dla wszystkich liczb rzeczywistych.</p>
+    <p><strong>Dziedzina:</strong> <code>ℝ</code></p>
+
+    <h3>2. Wyznaczenie miejsc zerowych funkcji:</h3>
+    <p>Aby znaleźć miejsca zerowe funkcji, rozwiązujemy równanie:</p>
+    <p><code>f(x) = 0</code>, czyli <code>x^2 - x - 6 = 0</code></p>
+
+    <h4>Krok 1: Obliczenie delty (<code>Δ</code>)</h4>
+    <p>Wzór na deltę: <code>Δ = b^2 - 4ac</code></p>
+    <p>Współczynniki równania to:</p>
     <ul>
         <li><code>a = 1</code></li>
         <li><code>b = -1</code></li>
         <li><code>c = -6</code></li>
     </ul>
-    
-    <h2>Krok 2: Wyznacz deltę</h2>
-    <p>Delta <code>Δ</code> to:</p>
-    <pre><code>Δ = b² - 4ac</code>
-<code>Δ = (-1)² - 4(1)(-6) = 1 + 24 = 25</code></pre>
-    
-    <h2>Krok 3: Znajdź pierwiastki równania</h2>
-    <p>Pierwiastki wyznacza się ze wzoru kwadratowego:</p>
-    <pre><code>x = (-b ± √Δ) / 2a</code>
-<code>x = (1 ± √25) / 2(1)</code></pre>
-    
-    <h3>Rozwiązując:</h3>
-    <pre><code>x₁ = (1 + 5) / 2 = 3</code>
-<code>x₂ = (1 - 5) / 2 = -2</code></pre>
-    
-    <h2>Wynik:</h2>
-    <p>Miejsca zerowe funkcji to:</p>
+    <p>Obliczenia:</p>
+    <p><code>Δ = (-1)^2 - 4 * 1 * (-6) = 1 + 24 = 25</code></p>
+
+    <h4>Krok 2: Obliczenie pierwiastków równania</h4>
+    <p>Pierwiastki równania kwadratowego obliczamy wzorem:</p>
+    <p><code>x₁, x₂ = (-b ± √Δ) / (2a)</code></p>
+    <p>Podstawiając wartości:</p>
+    <p><code>x₁, x₂ = (1 ± √25) / 2</code></p>
+    <p><code>x₁ = (1 - 5) / 2 = -2</code></p>
+    <p><code>x₂ = (1 + 5) / 2 = 3</code></p>
+
+    <h3>Podsumowanie:</h3>
     <ul>
-        <li><code>x₁ = 3</code></li>
-        <li><code>x₂ = -2</code></li>
+        <li><strong>Dziedzina:</strong> <code>ℝ</code></li>
+        <li><strong>Miejsca zerowe:</strong> <code>x = -2</code> oraz <code>x = 3</code></li>
     </ul>
 
-    <h1>Rozwiązanie zadania</h1>
-
-    <p>Rozwiążmy wyrażenie <code>f(x) = x³ - 3x² + 3x - 1</code> przy użyciu wzoru skróconego mnożenia:</p>
+    <h1>Analiza funkcji</h1>
     
-    <p>Chcemy wyrazić funkcję <code>f(x)</code> w postaci <code>(a - b)³ = a³ - 3a²b + 3ab² - b³</code>.</p>
+    <h2>Zadanie 1b</h2>
+    <p>Wyznaczyć dziedzinę i miejsca zerowe funkcji:</p>
+    <code>f(x) = x³ - 3x² + 3x - 1</code>
 
-    <h2>Krok 1: Dopasowanie funkcji do wzoru</h2>
-    <p>Funkcja <code>f(x) = x³ - 3x² + 3x - 1</code> jest w postaci, którą możemy zapisać jako <code>(x - 1)³</code>.</p>
+    <h2>Rozwiązanie</h2>
 
-    <h2>Krok 2: Sprawdzenie obliczeń</h2>
-    <p>Sprawdzamy, czy rozkład <code>(x - 1)³</code> daje nam wyrażenie <code>x³ - 3x² + 3x - 1</code>:</p>
+    <h3>1. Dziedzina</h3>
+    <p>Funkcja <code>f(x)</code> to wielomian, który jest określony dla każdej wartości <code>x</code>.</p>
+    <p><strong>Dziedzina:</strong> <code>R</code> (zbiór liczb rzeczywistych).</p>
 
-    <pre><code>(x - 1)³ = x³ - 3x² + 3x - 1</code></pre>
+    <h3>2. Miejsca zerowe</h3>
+    <p>Rozwiązujemy równanie:</p>
+    <code>f(x) = 0</code>
+    <p>Czyli:</p>
+    <code>x³ - 3x² + 3x - 1 = 0</code>
 
-    <p>Rzeczywiście, mamy: <code>f(x) = (x - 1)³</code>.</p>
+    <h4>Przekształcenie za pomocą wzoru skróconego mnożenia</h4>
+    <p>Funkcja jest w postaci wzoru skróconego mnożenia:</p>
+    <code>(x - 1)³ = x³ - 3x² + 3x - 1</code>
+    <p>Zatem:</p>
+    <code>f(x) = (x - 1)³</code>
+    <p>Aby znaleźć miejsca zerowe:</p>
+    <code>(x - 1)³ = 0</code>
+    <p>Stąd:</p>
+    <code>x - 1 = 0</code>
+    <code>x = 1</code>
+
+    <h3>Wyniki</h3>
+    <ul>
+        <li><strong>Dziedzina:</strong> <code>R</code></li>
+        <li><strong>Miejsce zerowe:</strong> <code>x = 1</code> (o trzykrotnej krotności)</li>
+    </ul>
+    <p>Funkcja dotyka osi <code>x</code> w punkcie <code>x = 1</code>, ale jej nie przecina.</p>
+
+<h1>Zadanie 1c</h1>
+    <h2>Funkcja: <code>f(x) = 1 / (x² - 9)</code></h2>
+
+    <h3>1. Dziedzina funkcji</h3>
+    <p>
+        Funkcja <code>f(x)</code> jest określona, gdy mianownik <code>x^2 - 9 ≠ 0</code>, ponieważ dzielenie przez zero jest niedozwolone.
+    </p>
+    <p>Rozwiązujemy równanie <code>x^2 - 9 = 0</code>:</p>
+    <pre>
+        x² - 9 = 0
+        x² = 9
+        x = ±3
+    </pre>
+    <p>
+        Zatem <code>x = 3</code> i <code>x = -3</code> są punktami, w których mianownik wynosi zero. Wykluczamy te punkty z dziedziny.
+    </p>
+    <p>
+        Dziedzina funkcji to: <code>D<sub>f</sub> = R \ {-3, 3}</code>.
+    </p>
+
+    <h3>2. Miejsca zerowe funkcji</h3>
+    <p>
+        Miejsca zerowe funkcji to takie wartości <code>x</code>, dla których <code>f(x) = 0</code>.
+    </p>
+    <pre>
+        f(x) = 0
+        1 / (x² - 9) = 0
+    </pre>
+    <p>
+        Równanie <code>1 / (x² - 9) = 0</code> nie ma rozwiązania, ponieważ licznik ułamka wynosi <code>1</code>, więc wyrażenie nigdy nie przyjmuje wartości <code>0</code>.
+    </p>
+    <p>
+        Zatem funkcja nie ma miejsc zerowych.
+    </p>
+
+    <h3>Podsumowanie</h3>
+    <ul>
+        <li><strong>Dziedzina:</strong> <code>D<sub>f</sub> = R \ {-3, 3}</code></li>
+        <li><strong>Miejsca zerowe:</strong> brak</li>
+    </ul>
+
+<h1>Zadanie 1d</h1>
+
+ <h2>Analiza funkcji: <code>f(x) = ln(√x - 4)</code></h2>
+
+    <h2>1. Dziedzina funkcji</h2>
+    <p>Funkcja jest określona tylko wtedy, gdy argument logarytmu jest większy od zera. Zatem musimy zapewnić, że:</p>
+    <p><code>√x - 4 > 0</code></p>
+    <p>Rozwiązujemy nierówność:</p>
+    <p><code>√x > 4</code></p>
+    <p>Teraz podnosimy obie strony nierówności do kwadratu (pamiętając, że pierwiastek jest liczbą nieujemną):</p>
+    <p><code>x > 16</code></p>
+    <p>Dziedzina funkcji to:</p>
+    <p><code>D(f) = (16, ∞)</code></p>
+
+    <h2>2. Miejsca zerowe funkcji</h2>
+    <p>Aby znaleźć miejsca zerowe, rozwiązujemy równanie:</p>
+    <p><code>f(x) = ln(√x - 4) = 0</code></p>
+    <p>Logarytm naturalny z liczby 1 wynosi 0, więc:</p>
+    <p><code>√x - 4 = 1</code></p>
+    <p>Dodajemy 4 do obu stron:</p>
+    <p><code>√x = 5</code></p>
+    <p>Teraz podnosimy obie strony do kwadratu:</p>
+    <p><code>x = 25</code></p>
+    <p>Miejscem zerowym funkcji jest:</p>
+    <p><code>x = 25</code></p>
+
+    <h2>Podsumowanie</h2>
+    <p>Dziedzina funkcji: <code>D(f) = (16, ∞)</code></p>
+    <p>Miejsce zerowe funkcji: <code>x = 25</code></p>
+
+<h1> Zadanie 1e </h1>
+
+    
+    <h2>Funkcja</h2>
+    <p>Funkcja ma postać: <code>f(x) = √(x + 2) - 1/√(4 - x)</code></p>
+    
+    <h2>1. Dziedzina funkcji</h2>
+    <p>Funkcja jest określona, gdy:</p>
+    <ul>
+        <li><code>√(x + 2)</code> jest określona, gdy <code>x + 2 ≥ 0</code>, czyli <code>x ≥ -2</code></li>
+        <li><code>1/√(4 - x)</code> jest określona, gdy <code>4 - x > 0</code>, czyli <code>x < 4</code></li>
+    </ul>
+    <p>Stąd dziedzina funkcji to zbiór: <code>x ∈ [-2, 4)</code></p>
+
+    <h2>2. Miejsca zerowe funkcji</h2>
+    <p>Aby znaleźć miejsca zerowe, rozwiązujemy równanie:</p>
+    <code>√(x + 2) - 1/√(4 - x) = 0</code>
+    <p>Przekształcamy je do postaci:</p>
+    <code>√(x + 2) = 1/√(4 - x)</code>
+    <p>Podnosimy obie strony do kwadratu:</p>
+    <code>x + 2 = 1 / (4 - x)</code>
+    <p>Mnożymy obie strony przez <code>(4 - x)</code>:</p>
+    <code>(x + 2)(4 - x) = 1</code>
+    <p>Rozwijamy i upraszczamy:</p>
+    <code>4x - x² + 8 - 2x = 1</code>
+    <code>-x² + 2x + 8 = 1</code>
+    <p>Przenosimy wszystko na jedną stronę:</p>
+    <code>-x² + 2x + 7 = 0</code>
+    <p>Mnożymy przez -1:</p>
+    <code>x² - 2x - 7 = 0</code>
+    
+    <h3>Obliczenie delty</h3>
+    <p>Obliczamy deltę:</p>
+    <code>Δ = b² - 4ac</code>
+    <p>Dla równania <code>x² - 2x - 7 = 0</code>, mamy:</p>
+    <ul>
+        <li><code>a = 1</code></li>
+        <li><code>b = -2</code></li>
+        <li><code>c = -7</code></li>
+    </ul>
+    <p>Podstawiamy do wzoru na deltę:</p>
+    <code>Δ = (-2)² - 4(1)(-7) = 4 + 28 = 32</code>
+
+    <h3>Obliczenie pierwiastków</h3>
+    <p>Podstawiamy deltę do wzoru na pierwiastki równania kwadratowego:</p>
+    <code>x = (-b ± √Δ) / 2a</code>
+    <p>Podstawiamy wartości:</p>
+    <code>x = (2 ± √32) / 2</code>
+    <p>Upraszczamy:</p>
+    <code>x = (2 ± 4√2) / 2</code>
+    <p>Po podzieleniu przez 2:</p>
+    <code>x = 1 ± 2√2</code>
+
+    <h3>Przybliżone miejsca zerowe</h3>
+    <p>Obliczamy przybliżoną wartość <code>2√2</code>:</p>
+    <code>2√2 ≈ 2 × 1.414 ≈ 2.828</code>
+    <p>Stąd:</p>
+    <code>x₁ ≈ 1 + 2.828 = 3.828</code>
+    <code>x₂ ≈ 1 - 2.828 = -1.828</code>
+
+    <h3>Podsumowanie</h3>
+    <p>Miejsca zerowe funkcji to:</p>
+    <ul>
+        <li><code>x₁ ≈ 3.828</code></li>
+        <li><code>x₂ ≈ -1.828</code></li>
+    </ul>
 
 
 </body>
